@@ -1,0 +1,54 @@
+<ion-side-menus enable-menu-with-back-views="true">
+		<ion-side-menu-content >
+		
+				<ion-nav-view>
+				
+					<ion-content style="background:#516991; background-size: cover;">
+						<div class="row" style="background:#011f4b; font-weight:bold">
+								<div class="col col-20" style="padding-top:0px;border-bottom:none;text-align:left"><button menu-toggle="left" class="button button-icon ion-navicon" style="text-align:left; font-size:32px; color:white"></button></div>
+								<div class="col col-60" class="button-bar" style="text-align:center; font-size:14px;">
+								Attendance Percentage<br><font style="color:white; font-size:10px">Paper: &nbsp{{classcode}}</font>
+								</div>
+								<div class="col col-20" style="padding-top:15px;border-bottom:none">Total Class: &nbsp{{ttlcls}}</div>
+						</div>
+			
+						<div class="row rwdata " style="padding-top:5px">
+							<div class="col col-20" style="background:#03396c">ROLL</div>
+							<div class="col col-50" style="background:#03396c">NAME</div>
+							<div class="col col-20" style="background:#03396c">TOTAL</div>
+							<div class="col col-10" style="background:#03396c">%</div>
+						</div>
+						<div class="row" ng-repeat="data in std">
+							<div class="col col-20">{{data.Roll}}</div>
+							<div class="col col-50">{{data.name}}</div>
+							<div class="col col-20">{{ttl[$index]}}</div>
+							<div class="col col-10">{{perttl[$index]}}&nbsp%</div>
+						</div>
+	
+					</ion-content>
+
+			
+				</ion-nav-view>
+		</ion-side-menu-content>
+			
+		<ion-side-menu side="left">
+				<ion-header-bar class="bar-royal">
+					<h1 class="title"><i class="icon ion-home"> </i>Menu</h1>
+				</ion-header-bar>
+				<ion-content >
+					<ion-list>
+
+						<ion-item menu-close ng-click="home()">Home</ion-item>
+					
+						<ion-item menu-close ng-click='Atten()'>Attandance</ion-item>
+				
+					</ion-list>
+						
+					<ion-list>
+						<ion-item menu-close ng-click="logout()">Logout</ion-item>
+					</ion-list>
+					
+					
+				</ion-content>
+		</ion-side-menu>
+		</ion-side-menus>

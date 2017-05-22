@@ -1,0 +1,35 @@
+<ion-view view-title="user login" ng-controller="AppCtrl1">
+<ion-content style="background: url(img/win1.png) center; background-size: cover;">
+	<div class="row responsive-sm row-center">
+	<div class="col col-50 col-offset-45" style="border-bottom:none">
+	 <div class="hero no-header flat">
+            <div class="content"> 
+				</br>
+                <div class="app-icon"></div>
+				</br>
+            </div>
+			</br>
+        </div>
+		<div class="list" style="padding-top:80px">
+		  <label class="item item-input item-floating-label">
+			<span class="input-label"><i class="icon ion-person"></i>  User ID</span>
+			<input class="ic" type="text"  ng-model="user.username" placeholder="Enter User ID">
+			<hr>
+		  </label>
+		  <label class="item item-input item-floating-label">
+			<span class="input-label"><i class="icon ion-unlocked"></i>  Password</span>
+			<input class="ic" type="password" ng-model="user.password" placeholder="Enter Password">
+			<hr>
+		  </label>
+		</div>
+		
+		<div class="padding">
+            <button ui-sref="app.profile" class="button button-block button-positive" ng-click="login(user)"><font color=""><i class="icon ion-log-in"></i> <b>Login</b></font></button>
+        </div>
+		</div>
+		</div>
+
+</ion-content>
+</ion-view>
+			
+    

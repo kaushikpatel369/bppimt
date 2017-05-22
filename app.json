@@ -1,0 +1,7 @@
+{
+"name": "bppimt",
+"description": "attendance app for bppimt",
+"repository":"https://github.com/kaushikpatel369/bppimt.git",
+"logo":"http://node-js-sample.herokuapp.com/node.svg",
+"keywords": ["ionic", "express", "static"]
+}
