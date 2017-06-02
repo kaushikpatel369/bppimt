@@ -154,7 +154,7 @@
 	var p=0;
 	var classObj;
 	var tc={};//variable to calculate total class.
-	app.controller('pgfour', function($scope,$filter,simpleObj,$ionicActionSheet,$stateParams, $http, $state,$ionicPopup){
+	app.controller('pgfour', function($scope,$filter,simpleObj,$ionicActionSheet,$stateParams,$window, $http, $state,$ionicPopup){
 		
 		
 		
