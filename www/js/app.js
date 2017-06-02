@@ -29,7 +29,6 @@
 		console.log('2');
 		$stateProvider.state('list', {
 			url: '/list',
-			
 			templateUrl: 'templates/login.html',
 			cache: false,
 			controller: 'AppCtrl1'
@@ -38,6 +37,7 @@
 		$stateProvider.state('stream', {
 			url: '/stream',
 			templateUrl: 'templates/pg2.html',
+			cache: false,
 			controller: 'EditCtrl'
 		});
 		console.log('4');
@@ -56,12 +56,14 @@
 		$stateProvider.state('mca',{
 			url:'/mca',
 			templateUrl:'templates/pg3.html',
+			cache: false,
 			controller:'pgthree'
 		});
 		
 		$stateProvider.state('percentage',{
 			url:'/percentage',
 			templateUrl:'templates/percentage.html',
+			cache: false,
 			controller:'percentage'
 		});
 
